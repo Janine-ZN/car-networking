@@ -10,12 +10,16 @@
     <link rel="stylesheet" href="css/main.css">
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
 </head>
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark my-navbar">
-            <a class="navbar-brand" href="#">Navbar</a>
+        <nav class="navbar navbar-expand-lg navbar-dark my-navbar">
+            <a class="navbar-brand" href="#">
+                <img src="imgs/brand.png" alt="">
+                <span class="header-brand">| 车联网安全</span>
+            </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -23,19 +27,16 @@
             <div class="collapse navbar-collapse my-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">培训 <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="#train">培训 <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">测试</a>
+                        <a class="nav-link" href="#test">测试</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">解决方案</a>
+                        <a class="nav-link" href="#menu-title">解决方案</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">产品</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">关于我们</a>
+                        <a class="nav-link" href="#product">产品</a>
                     </li>
                 </ul>
             </div>
@@ -50,13 +51,13 @@
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="imgs/slide1.png" class="d-block w-100" alt="...">
+                    <img src="imgs/slide1.png" class="d-block w-100" alt="..." height="800px">
                 </div>
                 <div class="carousel-item">
-                    <img src="imgs/slide2.png" class="d-block w-100" alt="...">
+                    <img src="imgs/slide1.png" class="d-block w-100" alt="..." height="800px">
                 </div>
                 <div class="carousel-item">
-                    <img src="imgs/slide3.png" class="d-block w-100" alt="...">
+                    <img src="imgs/slide1.png" class="d-block w-100" alt="..." height="800px">
                 </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -69,8 +70,315 @@
             </a>
         </div>
     </section>
+    <section id="train">
+        <div class="menu-title">
+            <span>培训</span>
+        </div>
+        <div class="tarin-img">
+            <div class="img-explain">
+                <div class="common-box common-box-train1"></div>
+                <div class="common-box common-box-bule">
+                    <div class="explain">
+                        <div class="explain-title">
+                            <span class="title">SAE J3061培训</span>
+                            <div>
+                                <span class="title-bottom"></span>
+                            </div>
+                        </div>
+                        <div class="explain-content">
+                            深入解读SAE J3061 信息安全流程框架，
+                            根据指南制定符合自身实际情况的信息安全流程，
+                            保证车联网产品设计、开发、测试、运营及管理等涉及产品全生命周期的信息安全，
+                            减少信息安全威胁。
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="img-explain">
+                <div class="common-box common-box-train2"></div>
+                <div class="common-box common-box-bule">
+                    <div class="explain">
+                        <div class="explain-title">
+                            <span class="title">Web安全培训</span>
+                            <div>
+                                <span class="title-bottom"></span>
+                            </div>
+                        </div>
+                        <div class="explain-content">
+                            基于车联网云端平台的信息安全培训，
+                            深入了解云端平台漏洞风险及相关防护手段，
+                            构建更为安全可靠的车联网云端服务平台。
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="img-explain">
+                <div class="common-box common-box-train3"></div>
+                <div class="common-box common-box-bule">
+                    <div class="explain">
+                        <div class="explain-title">
+                            <span class="title">威胁分析与风险评估培训</span>
+                            <div>
+                                <span class="title-bottom"></span>
+                            </div>
+                        </div>
+                        <div class="explain-content">
+                            深入理解威胁分析模型与风险评估体系及相关评估流程，
+                            根据自身实际构建合适的威胁分析和风险评估体系，
+                            了解车联网产品面临的安全风险，防患于未然。
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="test">
+        <div class="test-one">
+            <div class="menu-title">
+                <span>测试</span>
+            </div>
+            <div class="row">
+                <div class="col-xs-8 col-sm-6">
+                    <img src="imgs/test1.png" alt="">
+                </div>
+                <div class="col-xs-4 col-sm-6">
+                    <div class="test-title">渗透测试</div>
+                    <div class="test-text">
+                        针对汽车可能面临的信息安全风险，对汽车关键模块例如IVI、
+                        网关、T-BOX、ECU、CAN网络等进行包括模糊测试、硬件测
+                        试、软件分析、通信测试等一系列信息安全测试。通过丰富
+                        的测试用例对汽车信息安全进行检测并出具风险评估报告，
+                        为建立有效的信息安全防护体系提供依据。
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="test-two">
+            <div class="row test-middle">
+                <div class="col-xs-8 col-sm-6">
+                    <div class="test-title">验证测试</div>
+                    <div class="test-text">
+                        依据国际及行业相关信息安全标准对汽车安全功能进
+                        行检测，通过全生命周期的有效检测确保产品全生命
+                        周期的安全功能得以实现，符合相关国内外标准。
+                    </div>
+                </div>
+                <div class="col-xs-4 col-sm-6">
+                    <!-- <img src="imgs/test1.png" alt=""> -->
+                </div>
+            </div>
+        </div>
+        <div class="test-three">
+            <div class="row test-content">
+                <div class="col-xs-8 col-sm-6">
+                    <img src="imgs/test1.png" alt="">
+                </div>
+                <div class="col-xs-4 col-sm-6">
+                    <div class="test-title">威胁分析与风险评估</div>
+                    <div class="test-text">
+                        根据数据CIA模型和相关威胁分析方法构建全面的威胁分析模型，确认
+                        资产、识别威胁、进行脆弱性分析。针对资产，确定其面临的威胁，
+                        通过预设攻击场景对相关威胁进行分级，根据攻击概率和威胁严重程度
+                        确定面临的安全风险等级，为采取响应的信息安全防护手段提供参考。
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="solution">
+        <div class="menu-title">
+            <span>解决方案</span>
+        </div>
+        <div class="row solution">
+            <div class="col-xs-12 col-sm-4 tarin-img">
+                <div class="img-explain">
+                    <div class="common-box common-box-gray">
+                        <div class="circle" style="background: linear-gradient(to bottom, #2AA9FB, #6476FF);">
+                            <span>
+                                EAL
+                                <br>
+                                信息安全
+                            </span>
+                        </div>
+                        <div class="common-box-text">EAL信息安全认证服务</div>
+                    </div>
+                    <div class="common-box common-box-bule"
+                        style="width:386px; background: linear-gradient(to bottom, #2AA9FB, #6476FF);">
+                        <div class="explain">
+                            <div class="explain-title">
+                                <span class="title">EAL信息安全认证服务</span>
+                            </div>
+                            <div class="explain-content">
+                                深入解读SAE J3061
+                                信息安全流程框架，
+                                根据指南制定符合自身实际情况的信息安全流程，
+                                保证车联网产品设计、开发、测试、运营及管理等涉及产品全生命周期的信息安全，减少信息安全威胁。
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-4 tarin-img">
+                <div class="img-explain">
+                    <div class="common-box common-box-gray">
+                        <div class="circle" style="background: linear-gradient(to bottom, #FC7D92, #EC4AD6);">
+                            <span>
+                                OTA
+                                <br>
+                                安全防护
+                            </span>
+                        </div>
+                        <div class="common-box-text">OTA安全防护方案</div>
+                    </div>
+                    <div class="common-box common-box-bule"
+                        style="width:386px; background: linear-gradient(to bottom, #FC7D92, #EC4AD6);">
+                        <div class="explain">
+                            <div class="explain-title">
+                                <span class="title">OTA安全防护方案</span>
+                            </div>
+                            <div class="explain-content">
+                                基于车联网云端平台的信息安全培训，
+                                深入了解云端平台漏洞风险及相关防护手段，
+                                构建更为安全可靠的车联网云端服务平台。
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-4 tarin-img">
+                <div class="img-explain">
+                    <div class="common-box common-box-gray">
+                        <div class="circle">
+                            <span>
+                                CAN
+                                <br>
+                                网络信息
+                            </span>
+                        </div>
+                        <div class="common-box-text">CAN网络信息安全防护方案</div>
+                    </div>
+                    <div class="common-box common-box-bule"
+                        style="width:386px; background: linear-gradient(to bottom, #9482F4, #7B73F9);">
+                        <div class="explain">
+                            <div class="explain-title">
+                                <span class="title">CAN网络信息安全防护方案</span>
+                            </div>
+                            <div class="explain-content">
+                                深入理解威胁分析模型与风险评估体系及相关评估流程，
+                                根据自身实际构建合适的威胁分析和风险评估体系，
+                                了解车联网产品面临的安全风险，防患于未然。
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-
+            </div>
+        </div>
+        <div class="row solution">
+            <div class="col-xs-12 col-sm-4 tarin-img">
+                <div class="img-explain">
+                    <div class="common-box common-box-gray">
+                        <div class="circle">
+                            <span>
+                                EAL
+                                <br>
+                                网络安全
+                            </span>
+                        </div>
+                        <div class="common-box-text">CAN网络信息安全评估方案</div>
+                    </div>
+                    <div class="common-box common-box-bule"
+                        style="background: linear-gradient(to bottom, #9482F4, #7B73F9);">
+                        <div class="explain">
+                            <div class="explain-title">
+                                <span class="title">CAN网络信息安全评估方案</span>
+                            </div>
+                            <div class="explain-content">
+                                深入解读SAE J3061
+                                信息安全流程框架，
+                                根据指南制定符合自身实际情况的信息安全流程，
+                                保证车联网产品设计、开发、测试、运营及管理等涉及产品全生命周期的信息安全，减少信息安全威胁。
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-4 tarin-img">
+                <div class="img-explain">
+                    <div class="common-box common-box-gray common-box-hover">
+                        <div class="circle" style="background: linear-gradient(to bottom, #FD9961, #F86963);">
+                            <span>
+                                安全数据
+                                <br>
+                                中心
+                            </span>
+                        </div>
+                        <div class="common-box-text">车联网安全数据中心</div>
+                    </div>
+                    <div class="common-box common-box-bule"
+                        style="background: linear-gradient(to bottom, #FD9961, #F86963);">
+                        <div class="explain">
+                            <div class="explain-title">
+                                <span class="title">车联网安全数据中心</span>
+                            </div>
+                            <div class="explain-content">
+                                基于车联网云端平台的信息安全培训，深入了解云端平台漏洞风险及相关防护手段，构建更为安全可靠的车联网云端服务平台。
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-4 tarin-img">
+                <div class="img-explain">
+                    <div class="common-box common-box-gray">
+                        <div class="circle" style="background: linear-gradient(to bottom, #2AA9FB, #6476FF);">
+                            <span>
+                                通信安全
+                                <br>
+                                防护
+                            </span>
+                        </div>
+                        <div class="common-box-text">车联网通信安全防护</div>
+                    </div>
+                    <div class="common-box common-box-bule"
+                        style="background: linear-gradient(to bottom, #2AA9FB, #6476FF);">
+                        <div class="explain">
+                            <div class="explain-title">
+                                <span class="title">车联网通信安全防护</span>
+                            </div>
+                            <div class="explain-content">
+                                深入理解威胁分析模型与风险评估体系及相关评估流程，
+                                根据自身实际构建合适的威胁分析和风险评估体系，
+                                了解车联网产品面临的安全风险，防患于未然。
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="product">
+        <div class="menu-title">
+            <span>产品</span>
+        </div>
+        <div class="product-content">
+            CAN网络自动测试工具可以对CAN网络自动化信息安全测试，测试范围包括，CAN网络探测，指令逆向，诊断服务，CAN 通信，
+            ECU安全等多个方面。依据测试结果和测试标准，出具信息安全测试报告，对汽车CAN网络信息安全进行分析，并给出建议
+        </div>
+        <div class="product-img">
+            <img src="imgs/bottom.png" alt="">
+        </div>
+    </section>
+    <footer class="footer">
+        <span>友情链接</span> 中国信息安全测评中心 | 开源网安 | OWASP中国
+        <span>关于我们</span> 认证培训 | web安全培训 | 政企客户培训 | 帮助中心
+        <span> 电话：4000-983=183 邮箱：service@seczone.cn</span>
+        <div class="divider"></div>
+        版权所有 SecZone互联网安全研究中心 2013-2018 SECZONE Cloud. All Rights Reserved
+    </footer>
+    <section class="up-top">
+        <a href="javascript:;" class="top"><img src="imgs/up-top.png" alt=""></a>
+    </section>
 </body>
 
 </html>
