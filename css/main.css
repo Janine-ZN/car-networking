@@ -145,12 +145,6 @@ body {
     border: none;
 }
 
-.common-box-train1:hover,
-.common-box-train2:hover,
-.common-box-train3:hover {
-    opacity: 0;
-}
-
 .common-box-gray {
     background: linear-gradient(to bottom, #1C2231, #4F5679);
 }
@@ -158,8 +152,6 @@ body {
 .common-box:hover {
     opacity: 0;
 }
-
-
 
 .img-explain {
     margin: 0 5px;
