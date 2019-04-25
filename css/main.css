@@ -1,8 +1,71 @@
+/* 标题下的下划线 */
+.title-bottom {
+    width: 35px;
+    display: inline-block;
+    border-bottom: 4px solid #fff;
+}
+
+/* 矩形圆角框 */
+.common-box {
+    width: 387px;
+    height: 384px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border: 1px solid #4F5679;
+    transition: visibility 0.5s;
+    background: linear-gradient(to bottom, #1C2231, #4F5679);
+}
+
+/* 圆形样式 */
+.circle {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    margin: 90px auto;
+    margin-bottom: 50px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 600;
+    background: linear-gradient(to bottom, #9482F4, #7B73F9);
+}
+
+/* 每个模块的标题和下面下划线的样式 */
+.menu-title {
+    color: #fff;
+    margin: 50px 0;
+    font-size: 28px;
+    text-align: center;
+}
+
+.menu-title .title-bottom {
+    border-bottom: 4px solid #057AFE;
+}
+
+/* 测试模块的 标题和正文的样式 */
+.test-title {
+    font-size: 28px;
+    font-weight: 400;
+    text-align: left;
+}
+
+.test-text {
+    width: 490px;
+    font-size: 16px;
+    text-align: left;
+    margin-top: 30px;
+}
+
 body {
+    font-family: MicrosoftYaHei, HiraginoSansGB-W3;
     background-color: #181E2E;
 }
 
 .my-navbar {
+    height: 100px;
     background: #111520;
     padding: 0;
     padding-left: 50px;
@@ -21,70 +84,28 @@ body {
 .my-collapse .nav-link {
     display: inline-block;
     color: #fff !important;
-    padding: 25px 0;
+    padding: 35px 0;
     margin: 0 15px;
 }
 
-.my-collapse .nav-link:hover {
-    color: #fff !important;
-    border-bottom: 2px solid #057AFE;
-}
-
+.my-collapse .nav-link:hover,
 .my-collapse .active>.nav-link {
-    border-bottom: 2px solid #057AFE;
+    color: #fff !important;
+    border-bottom: 4px solid #057AFE;
 }
-
-.menu-title {
-    color: #fff;
-    margin: 50px 0;
-    text-align: center;
-}
-
-.menu-title span {
-    padding: 10px;
-    font-size: 28px;
-    border-bottom: 2px solid #057AFE;
-}
-
-
 
 /* 测试 */
-.test-one {
+.test-one,
+.test-three {
     width: 1200px;
+    background: #fff;
+}
+
+.test-one {
     height: 498px;
     margin: 50px auto;
     margin-bottom: 0;
     text-align: center;
-    background: #fff;
-}
-
-.test-one .menu-title {
-    display: inline-block;
-    color: black;
-    margin: 80px auto;
-}
-
-.test-three .test-title,
-.test-two .test-title,
-.test-one .test-title {
-    font-size: 28px;
-    font-family: MicrosoftYaHei;
-    font-weight: 400;
-    text-align: left;
-}
-
-.test-three .test-text,
-.test-two .test-text,
-.test-one .test-text {
-    width: 490px;
-    font-size: 16px;
-    text-align: left;
-    margin-top: 30px;
-}
-
-.test-two .test-title,
-.test-two .test-text {
-    color: #fff;
 }
 
 .test-two {
@@ -92,71 +113,70 @@ body {
     background: url('../imgs/test2.png') no-repeat;
 }
 
-.test-middle {
+.test-three {
+    height: 408px;
+    margin: 0px auto;
+}
+
+.test-one .menu-title {
+    display: inline-block;
+    color: black;
+    margin: 50px auto;
+}
+
+.test-two .test-title,
+.test-two .test-text {
+    color: #fff;
+}
+
+.test-two .test-middle {
     width: 1200px;
     margin: 0px auto;
     padding: 100px 0;
-}
-
-.test-three {
-    width: 1200px;
-    height: 408px;
-    margin: 0px auto;
-    background: #fff;
 }
 
 .test-three .test-content {
     padding: 100px 0;
 }
 
+/* solution */
 .solution {
     width: 1200px;
     margin: 0 auto;
     padding: 10px 0;
 }
 
-.tarin-img {
-    position: relative;
-    text-align: center;
+.train1,
+.train2,
+.train3 {
+    border: none;
 }
 
-.common-box {
-    width: 387px;
-    height: 384px;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    border: 1px solid #4F5679;
-    transition: visibility 0.5s;
-}
-
-.common-box-train1 {
+.train1 {
     background: url('../imgs/train1.png');
-    border: none;
 }
 
-
-.common-box-train2 {
+.train2 {
     background: url('../imgs/train2.png');
-    border: none;
 }
 
-.common-box-train3 {
+.train3 {
     background: url('../imgs/train3.png');
-    border: none;
-}
-
-.common-box-gray {
-    background: linear-gradient(to bottom, #1C2231, #4F5679);
 }
 
 .common-box:hover {
     opacity: 0;
 }
 
+.tarin-img {
+    text-align: center;
+}
+
+/* 子绝父相 */
 .img-explain {
+    position: relative;
     margin: 0 5px;
     display: inline-block;
-
 }
 
 .img-explain .common-box-bule {
@@ -166,7 +186,6 @@ body {
     z-index: -1;
 }
 
-
 .img-explain .explain {
     width: 295px;
     text-align: center;
@@ -174,37 +193,14 @@ body {
     color: #fff;
 }
 
-.img-explain .explain .explain-title .title-bottom {
-    width: 35px;
-    display: inline-block;
-    border-bottom: 4px solid #fff;
-}
-
-
-.explain .title {
+.img-explain .explain .title {
     font-size: 18px;
 }
 
-.explain .explain-content {
+.img-explain .explain .explain-content {
     margin-top: 50px;
     text-align: left;
     font-size: 14px;
-}
-
-.common-box .circle {
-    width: 140px;
-    height: 140px;
-    border-radius: 50%;
-    margin: 90px auto;
-    margin-bottom: 50px;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 18px;
-    color: #fff;
-    font-weight: 600;
-    background: linear-gradient(to bottom, #9482F4, #7B73F9);
 }
 
 .common-box-text {
@@ -233,11 +229,24 @@ body {
     background: #000
 }
 
-/* 分割线 */
-.footer  .divider {
+.footer .info span:nth-child(2n-1) {
+    font-size: 18px;
+}
+
+.footer .info span:nth-child(2n) {
+    font-size: 14px;
+    padding: 0 10px;
+}
+
+.footer .divider {
     width: 1220px;
     margin: 50px auto;
     border-bottom: 1px solid #525868;
+}
+
+.footer .copyright {
+    font-size: 14px;
+    color: #4E576F;
 }
 
 /* 返回顶部 */
@@ -250,8 +259,3 @@ body {
 .up-top img {
     width: 300px;
 }
-
-
-
-/* 样式整理 */
-.font-menu {}
