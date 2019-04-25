@@ -3,9 +3,9 @@ body {
 }
 
 .my-navbar {
-    margin-left: 50px;
     background: #111520;
     padding: 0;
+    padding-left: 50px;
 }
 
 .header-brand {
@@ -130,21 +130,17 @@ body {
 }
 
 .common-box-train1 {
-    margin: 0 5px;
     background: url('../imgs/train1.png');
     border: none;
-    transition: visibility 0.5s;
 }
 
 
 .common-box-train2 {
-    margin: 0 5px;
     background: url('../imgs/train2.png');
     border: none;
 }
 
 .common-box-train3 {
-    margin: 0 5px;
     background: url('../imgs/train3.png');
     border: none;
 }
@@ -163,33 +159,35 @@ body {
     opacity: 0;
 }
 
-.explain {
+
+
+.img-explain {
+    margin: 0 5px;
+    display: inline-block;
+
+}
+
+.img-explain .common-box-bule {
+    position: absolute;
+    top: 0;
+    background: linear-gradient(to bottom, #13BDF9, #6476FF);
+    z-index: -1;
+}
+
+
+.img-explain .explain {
     width: 295px;
     text-align: center;
     margin: 50px auto;
     color: #fff;
 }
 
-.img-explain {
-    display: inline-block;
-
-}
-
-.common-box-bule {
-    position: absolute;
-    top: 0;
-    margin: 0 5px;
-    background: linear-gradient(to bottom, #13BDF9, #6476FF);
-    z-index: -1;
-}
-
-
-
-.explain .title-bottom {
+.img-explain .explain .explain-title .title-bottom {
     width: 35px;
     display: inline-block;
     border-bottom: 4px solid #fff;
 }
+
 
 .explain .title {
     font-size: 18px;
@@ -243,14 +241,14 @@ body {
     background: #000
 }
 
-
-.divider {
+/* 分割线 */
+.footer  .divider {
     width: 1220px;
     margin: 50px auto;
     border-bottom: 1px solid #525868;
 }
 
-
+/* 返回顶部 */
 .up-top {
     position: fixed;
     bottom: 0;
@@ -260,3 +258,8 @@ body {
 .up-top img {
     width: 300px;
 }
+
+
+
+/* 样式整理 */
+.font-menu {}
