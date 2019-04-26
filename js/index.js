@@ -6,7 +6,7 @@ $(function () {
 
         var top1 = $(this).scrollTop(); //获取相对滚动条顶部的偏移
 
-        if (top1 > 200) { //当偏移大于200px时让图标淡入（css设置为隐藏）
+        if (top1 >200) { // 当偏移大于450px时让图标淡入（css设置为隐藏）
 
             $(".top").stop().fadeIn();
 
