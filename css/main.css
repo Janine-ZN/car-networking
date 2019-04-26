@@ -169,7 +169,15 @@ body {
 }
 
 .tarin-img {
+    position: relative;
     text-align: center;
+}
+
+.tarin-img .stairs {
+    position: absolute;
+    bottom: -150px;
+    right: -340px;
+    z-index: -1;
 }
 
 /* 子绝父相 */
@@ -250,12 +258,15 @@ body {
 }
 
 /* 返回顶部 */
-.up-top {
+.top {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
     position: fixed;
-    bottom: 0;
-    right: 0px;
-}
-
-.up-top img {
-    width: 300px;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 5px;
+    background: #EEEEEE;
+    text-align: center;
+    line-height: 50px;
 }
