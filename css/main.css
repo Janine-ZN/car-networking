@@ -259,7 +259,6 @@ body {
 
 /* 返回顶部 */
 .top {
-    display: inline-block;
     width: 60px;
     height: 60px;
     position: fixed;
@@ -269,4 +268,5 @@ body {
     background: #EEEEEE;
     text-align: center;
     line-height: 50px;
+    display: none;
 }
